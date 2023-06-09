@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+body {
+    font-size: 1.6rem;
+    line-height: 200%;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align:bottom;
+}
+
+header {
+    padding: 10px;
+}
+
+h1 ,footer img {
+    width: 110px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 30px;
+    color: #333;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+a {
+    transition: all 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.inner {
+    width: 100%;
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.sp_block {
+    display: none;
+}
+
+/* =============================================
+メインビジュアル
+============================================= */
+#main-visual {
+    position: relative;
+}
+
+.entry-btn {
+    display: inline-block;
+    position: absolute;
+    left: 16%;
+    bottom: 7%;
+    z-index: 1;
+    width: 45%;
+}
+
+/* =============================================
+漫画部分
+============================================= */
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.sec-01 {
+    background: url(../images/01bg_pc.png) no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    padding-bottom: 0;
+}
+
+.sec-01::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    border-top: 60px solid #365359;
+    border-bottom: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sec-02 {
+    background-color: #fafafa;
+}
+
+.sec-03 {
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.sec-03::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+    border-top: 60px solid #ffffff;
+    border-bottom: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sec-04 {
+    background: url(../images/merit-bg.png);
+}
+
+.sec-conversion {
+    background-color: #2C3A6A;
+    padding: 50px 0;
+}
+
+/* =============================================
+プレーンテキスト部分
+============================================= */
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.line::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: #6AB9EB;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* ご利用者の声------------------------*/
+.sec-voice {
+    background-color: #EFF7FA;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    height:auto;
+}
+
+.swiper-slide {
+    background: #fff;
+    width: 300px;
+    height:auto;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    display: flex;
+    flex-direction: column;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0); */
+}
+
+.voice-ttl {
+    color: #2C3A6A;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 8px;
+}
+
+.voice-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #666666;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6AB9EB;
+}
+
+/* ご利用の流れ------------------------*/
+.flow-list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.flow-list::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    background-color: #C19B30;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+
+.flow-item {
+    width: 18%;
+}
+
+.flow-text {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 140%;
+}
+
+/* よくある質問------------------------*/
+.sec-question {
+    background: #EFF7FA;
+}
+
+.sec-question dl {
+    background-color: #fff;
+    padding: 25px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sec-question dl dt {
+    color: #2C3A6A;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.sec-question dl dt::before {
+    content: "Q.";
+    font-size: 2.8rem;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec-question dl dd {
+    display: flex;
+}
+
+.sec-question dl dd::before {
+    content: "A.";
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding-right: 10px;
+    color: #C19B30;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 最後の締め------------------------*/
+.sec-final .inner {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.final-text {
+    padding-top: 20px;
+}
+
+/* ---------------------------------
+SP用
+--------------------------------- */
+@media screen and (max-width: 768px) { 
+    section {
+        padding: 50px 0;
+    }
+
+    .sp_block {
+        display: block;
+    }
+
+    .inner {
+        padding: 0 4%;
+    }
+
+    .entry-btn {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+    }
+
+    .sec-01 {
+        background: url(../images/01bg_sp.png) no-repeat;
+        padding-bottom: 50px;
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .sec-05 .inner {
+        padding: 0 0 0 4%;
+    }
+
+    .sec-01::after{
+        border-right: 30px solid transparent;
+        border-left: 30px solid transparent;
+        border-top: 20px solid #365359;
+        bottom: -20px;
+    }
+
+    .sec-03::after{
+        border-right: 30px solid transparent;
+        border-left: 30px solid transparent;
+        border-top: 20px solid #ffffff;
+        bottom: -20px;
+    }
+
+    .sec-conversion {
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+    
+    .line::after {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: #6AB9EB;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .voice-ttl {
+        font-size: 1.8rem;
+    }
+
+    /* ご利用の流れ------------------------*/
+    .flow-list {
+        flex-direction: column;
+    }
+
+    .flow-list::before {
+        display: none;
+    }
+
+    .flow-item {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .flow-item p:nth-of-type(1) {
+        width: 35%;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flow-item p:nth-of-type(1)::after {
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: #C19B30;
+    }
+
+    .flow-item:nth-of-type(5) p:nth-of-type(1)::after {
+        display: none;
+    }
+
+    .flow-text {
+        flex: 1;
+        padding: 0;
+        text-align: left;
+    }
+    /* よくある質問------------------------*/
+    .sec-question dl dt {
+        font-size: 1.8rem;
+    }
+
+    .sec-question dl dt::before,
+    .sec-question dl dd::before {
+        font-size: 2.4rem;
+    }
+
+    /* 最後の締め------------------------*/
+    .sec-final .inner {
+        flex-direction: column;
+    }
+
+    .sec-final .inner picture img {
+        width: 80%;
+    }
+
+    .final-text {
+        padding-top: 30px;
+    }
+
+}
